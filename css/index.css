@@ -1,0 +1,318 @@
+:root {
+  --first-color: #197be5;
+  --second-color: #f6f6f5;
+  --third-color: #ffffff;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-custom::after {
+  display: none;
+}
+/*start header*/
+header {
+  background-color: var(--third-color);
+}
+header .logo {
+  width: 130px;
+  height: 30px;
+}
+header #search {
+  position: relative;
+}
+header #search input {
+  color: var(--first-color);
+  font-size: 17px;
+  padding: 3px 28px 3px 7px;
+  border-radius: 5px;
+  border: 1.5px solid #c5c4c4;
+  outline: 0;
+}
+header #search input::placeholder {
+  font-size: 14px;
+}
+header #search svg {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  width: 16px;
+}
+header svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 7px;
+}
+header img.profile {
+  width: 40px;
+  height: 40px;
+}
+header #cart {
+  position: relative;
+}
+header #cart span {
+  background-color: #f00;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+header div.profile {
+  margin-right: 14%;
+}
+/*end header*/
+/*start main*/
+/*start aside*/
+main aside,
+main #friends {
+  background-color: var(--third-color);
+  border-radius: 20px;
+  padding: 20px 10px;
+  height: fit-content;
+}
+main aside li {
+  font-size: 14px;
+  margin: 10px 0;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+main aside li svg path {
+  transition: 0.5s ease-in-out;
+  fill: transparent;
+  stroke: #000;
+}
+main aside li.active {
+  background-color: #e6f2ff;
+  color: var(--first-color);
+}
+main aside li.active svg path:last-child {
+  fill: var(--first-color);
+  stroke: #e6f2ff;
+}
+main aside li:hover {
+  background-color: #e6f2ff;
+  color: var(--first-color);
+}
+main aside li:hover svg path.bg {
+  fill: var(--first-color);
+  stroke: #e6f2ff;
+}
+main aside li svg {
+  height: 24px;
+  width: 24px;
+  margin-left: 8px;
+}
+/*end aside*/
+/*start stories*/
+main #stories,
+main #explore {
+  display: flex;
+  overflow-x: auto;
+}
+main #stories div,
+main #explore div {
+  position: relative;
+  margin: 0 5px;
+}
+main #stories div {
+  border-radius: 50%;
+}
+main #stories div img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+main #stories div:first-child span {
+  background-color: var(--first-color);
+  color: var(--third-color);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+  bottom: 5px;
+}
+main #stories div:not(:first-child) {
+  border: 2px solid var(--first-color);
+}
+main #stories span {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: -5px;
+}
+main #categories {
+  display: flex;
+}
+main #stories,
+main #explore {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+main #stories::-webkit-scrollbar,
+main #explore::-webkit-scrollbar {
+  display: none;
+}
+/*end stories*/
+/*start explore*/
+main #main p.mainp {
+  margin-top: 30px;
+  font-weight: bold;
+}
+main #explore {
+  margin-bottom: 30px;
+}
+main #explore span {
+  position: absolute;
+  z-index: 999;
+  top: 10px;
+  left: 5px;
+}
+main #explore img {
+  width: 120px;
+  height: 160px;
+  border-radius: 10px;
+}
+main #explore h5 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+/*end explore*/
+/*start categories*/
+main #categories div {
+  padding: 5px;
+  position: relative;
+}
+main #categories div img {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+}
+main #categories div h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #0000004a;
+  color: #fff;
+  height: 94%;
+  width: 96%;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20%;
+  margin: 5px;
+}
+/*end categories*/
+/*start posts*/
+main #posts article {
+  box-shadow: 1px 1px 2px #dcdbdb;
+  background-color: var(--third-color);
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 20px;
+}
+main #posts article .article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main #posts article .article-header .right {
+  display: flex;
+}
+main #posts article .article-header .right img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+main #posts article .article-header .right div h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+main #posts article .article-header .right div h5 {
+  font-size: 12px;
+  margin-top: 4px;
+}
+main #posts article .article-header .dropdown-toggle::after {
+  display: none;
+}
+main #posts article .article-header .left a {
+  font-size: 12px;
+  margin: 0 5px;
+}
+main #posts article .article-body img {
+  width: 100%;
+  max-height: 700px;
+}
+main #posts article .article-body .details,
+main #posts article .article-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #posts article .article-body .details {
+  margin-top: 20px;
+}
+main #posts article .article-footer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/*end posts*/
+/*start friends*/
+main #friends {
+  box-shadow: 1px 1px 2px #dcdbdb;
+}
+main #friends img {
+  margin: 0 0 0 10px;
+}
+main #friends h5 {
+  font-size: 15px;
+}
+main #friends h6 {
+  font-size: 13px;
+}
+main #friends li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+main #friends li .profile {
+  display: flex;
+  align-items: center;
+}
+main #friends li img {
+  width: 36px;
+  height: 36px;
+}
+main #friends form {
+  position: relative;
+}
+main #friends form input {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  outline: none;
+  color: var(--first-color);
+  border-bottom: 1px solid #dcdbdb;
+}
+main #friends form svg {
+  position: absolute;
+  left: 4px;
+  top: 9px;
+}
+/*end friends*/
+/*end main*/

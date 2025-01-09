@@ -1,0 +1,41 @@
+:root {
+  --first-color: #197be5;
+  --second-color: #f6f6f5;
+  --third-color: #ffffff;
+}
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--second-color);
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+}
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+  background: var(--first-color);
+  border-radius: 30px;
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
