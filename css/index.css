@@ -2,6 +2,7 @@
   --first-color: #197be5;
   --second-color: #f6f6f5;
   --third-color: #ffffff;
+  --dark-color:#151211;
 }
 .dropdown {
   display: inline-block;

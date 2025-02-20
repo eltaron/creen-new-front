@@ -1,0 +1,464 @@
+/* Start cartsData aside */
+main aside#cartsData .cart,
+main aside#cartsData .other-product {
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #dcdbdb;
+}
+main aside#cartsData .cart .price {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--second-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+main aside#cartsData .cart .price p:first-child {
+  font-weight: 400;
+  font-size: 11px;
+  color: #676564;
+  margin-bottom: 0;
+  line-height: 16.5px;
+}
+main aside#cartsData .cart .price p:last-child {
+  font-weight: 700;
+  font-size: 16px;
+  color: #f54747;
+  margin-bottom: 0;
+}
+main aside#cartsData .cart .cartData {
+  margin-top: 20px;
+}
+main aside#cartsData .cart .cartData .box img {
+  width: 119px;
+  height: 127px;
+  margin-bottom: 8px;
+}
+main aside#cartsData .cart .cartData .box .options {
+  width: 104px;
+  margin: auto;
+  gap: 24px;
+}
+main aside#cartsData .cart .cartData .box .options svg {
+  cursor: pointer;
+}
+main aside#cartsData .cart .cartData .box .options select {
+  padding: 4px 8px;
+  border: 1px solid #c5c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main aside#cartsData .cart .cartData .box .options select option {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+main aside#cartsData .cart .btns button:first-child {
+  background-color: var(--first-color);
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  margin-bottom: 8px;
+  color: white;
+  width: 100%;
+}
+main aside#cartsData .cart .btns button:last-child {
+  border: 1px solid #c5c4c4;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  margin-bottom: 8px;
+  color: #383635;
+  width: 100%;
+}
+/* End cartsData aside */
+
+/* Start other-product Section */
+main aside#cartsData .other-product {
+  margin-top: 8px;
+}
+main aside#cartsData .other-product h3{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #383635;
+}
+main aside#cartsData .other-product .productItem .img{
+  width: 92px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+main aside#cartsData .other-product .productItem .content h3{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #383635;
+}
+main aside#cartsData .other-product .productItem .content .salary{
+  font-size: 13px;
+  font-weight: 400;
+
+  color: #383635;
+}
+main aside#cartsData .other-product .productItem .content .salary .number{
+  font-size: 16px;
+}
+main aside#cartsData .other-product .productItem .content .bottom-div span{
+  padding: 2px 4px;
+  border-radius: 4px;
+  background-color: #F54747;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+/* End cartsData Section */
+
+
+/* Start mainProductDetails Section */
+main section#mainProductDetails{
+  padding: 24px 32px;
+  background-color: var(--second-color);
+}
+main section#mainProductDetails .container {
+  padding: 16px 32px;
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+
+}
+main section#mainProductDetails .header{
+  border-radius: 16px 16px 0 0;
+  padding: 16px 32px 0;
+  background-color: white;
+}
+main section#mainProductDetails .head span{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+main section#mainProductDetails .head span:last-child{
+  font-weight: 700;
+}
+main section#mainProductDetails .container .right-section .show-img .smallImg{
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+main section#mainProductDetails .container .right-section .show-img .bigImg{
+  width: 100%;
+  height: 550px;
+}
+main section#mainProductDetails .container .right-section .reviews h4, main section#mainProductDetails .container .right-section .reviews .stars .value p:first-child{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #383635;
+}
+main section#mainProductDetails .container .right-section .reviews .stars .value p:last-child{
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16.5px;
+  color: #676564;
+}
+main section#mainProductDetails .container .right-section .comments .top h4{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383635;
+} 
+main section#mainProductDetails .container .right-section .comments .top p,
+main section#mainProductDetails .container .right-section .comments .btm p{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #676564;
+}
+
+/* Start Supplement-Offers Section*/
+main section#Supplement-Offers{
+  padding: 16px;
+  border-radius: 16px;
+}
+section#Supplement-Offers .top-head p,section#Supplement-Offers .top-head h6{
+  font-size: 16px;
+  font-weight: 700;
+}
+section#Supplement-Offers .top-head p{
+  color: var(--first-color);
+  cursor: pointer;
+}
+section#Supplement-Offers .top-head h6{
+  color: var(--dark-color);
+}
+section#Supplement-Offers .main-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+section#Supplement-Offers .main-container .box{
+  margin-bottom: 4px;
+
+}
+section#Supplement-Offers .main-container .box .top{
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+section#Supplement-Offers .main-container .box .offer{
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  background-color: #F54747;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+section#Supplement-Offers .main-container .box .heart{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+section#Supplement-Offers .main-container .box .share{
+  position: absolute;
+  top: 160px;
+  left: 2px;
+}
+section#Supplement-Offers .main-container .box .card-data p,section#Supplement-Offers .main-container .box .card-data span{
+  font-size: 13px;
+  font-weight: 400;
+  color: #383635;
+  padding: 0;
+  margin: 3px 0;
+  cursor: pointer;
+}
+section#Supplement-Offers .main-container .box .card-data .cart svg{
+  cursor: pointer;
+}
+/* End Supplement-Offers Section*/
+
+
+main section#mainProductDetails .container .top-section .col-md-8 h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  color: #383635;
+}
+main section#mainProductDetails .container .top-section .col-md-8 p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #676564;
+}
+main section#mainProductDetails .container .top-section .evaluation p{
+  font-size: 11px;
+  font-weight: 700;
+  color: #676564;
+}
+main section#mainProductDetails .container .top-section .col-md-4 .price{
+  line-height: 38.4px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+main section#mainProductDetails .container .top-section .col-md-4 .counter{
+  background-color: #F1F1F1;
+  border-radius: 8px;
+  padding: 8px 4px;
+  width: 98px;
+  margin-right: auto;
+}
+main section#mainProductDetails .container .top-section .col-md-4 .counter span:first-child,main section#mainProductDetails .container .top-section .col-md-4 .counter span:last-child{
+  cursor: pointer;
+}
+main section#mainProductDetails .container .top-section .col-md-4 .counter span{
+  font-size: 16px;
+  font-weight: 700;
+}
+main section#mainProductDetails .container .col-md-5 .description h4,main section#mainProductDetails .container .col-md-5 .selection h4{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #383635;
+}
+main section#mainProductDetails .container .col-md-5 .description p{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13.5px;
+  color: #676564;
+}
+main section#mainProductDetails .container .col-md-5 .selection .size div{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #676564;
+  box-shadow: 0px 0px 12px 2px #00000017, 0px 0px 12px 0px #0000000D, 0px 0px 12px 0px #00000003;
+  box-shadow: 0px 0px 12px 2px #00000017;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+main section#mainProductDetails .container .col-md-5 .selection .size div:nth-child(2){
+  background-color: #151211;
+  color: white;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color{
+  padding: 8px;
+  border-radius: 32px;
+  box-shadow: 0px 0px 12px 2px #00000017, 0px 0px 12px 0px #0000000D, 0px 0px 12px 0px #00000003;
+  width: 160px;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color div{
+  border: 1px solid #C5C4C4;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color div:first-child{
+  background-color: #FFFFFF;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color div:nth-child(2){
+  background-color: #E8E8CD;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color div:nth-child(3){
+  background-color: #D8001A;
+}
+main section#mainProductDetails .container .col-md-5 .selection .color div:last-child{
+  background-color: #000000;
+}
+main section#mainProductDetails .container .selection .counter{
+  background-color: #F1F1F1;
+  border-radius: 8px;
+  padding: 8px 4px;
+  width: 98px;
+}
+main section#mainProductDetails .container .selection .counter span:first-child,main section#mainProductDetails .container .selection .counter span:last-child{
+  cursor: pointer;
+}
+main section#mainProductDetails .container .selection .counter span{
+  font-size: 16px;
+  font-weight: 700;
+}
+main section#mainProductDetails .container .btns button:first-child{
+  padding: 12px 16px;
+  background-color: #197BE5;
+  box-shadow: 0px 1px 2px 0px #1018280D, 0px 2px 0px 0px #0057B5 inset;
+  flex-grow: 1;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+}
+main section#mainProductDetails .container .btns button:last-child{
+  border: 1px solid #C5C4C4;
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  padding: 12px;
+  color: #383635;
+}
+
+
+
+
+@media(max-width:1400px){
+  section#mainProductDetails .container{
+    flex-direction: column-reverse;
+  }
+  section#mainProductDetails .container .col-md-5 .top-section{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  section#mainProductDetails .container .col-md-7, section#mainProductDetails .container .col-md-5{
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width:1200px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media(max-width:992px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .show-img{
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  .show-img .col-md-10{
+    padding: 0;
+    width: 100%;
+  }
+  .show-img .col-md-2{
+    flex-direction: row !important;
+    gap: 8px;
+    width: 100%;
+  }
+}
+@media(max-width:800px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width:767px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  main section#mainProductDetails .container .top-section .col-md-4{
+    align-items: center !important;
+    flex-direction: row !important;
+
+  }
+  section#mainProductDetails, section#mainProductDetails .container{
+    width: 100%;
+    margin: auto;
+  }
+
+}
+@media(max-width:520px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sizes-colors{
+    flex-direction: column;
+    justify-self: flex-start;
+  }
+  .reviews .stars{
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+}
+@media(max-width:420px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+/* aside media */
+@media(max-width:767px){
+  aside#cartsData .other-product .products .productItem{
+    justify-content: flex-start !important;
+    gap: 8px;
+  }
+}

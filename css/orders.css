@@ -1,0 +1,194 @@
+main section#order{
+    background-color: var(--second-color);
+    padding: 24px 32px;
+}
+main section#order .top{
+    gap: 8px;
+}
+main section#order .top p{
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400px;
+    margin-bottom: 0 !important;
+    line-height: 19.5px;
+}
+main section#order .top svg{
+    width: 16px;
+    height: 16px;
+}
+main section#order .content{
+    padding: 32px 0 32px 0;
+}
+main section#order .content .inputs input {
+    border: 1px solid #C5C4C4;
+    border-radius: 8px;
+    width: 330px;
+    height: 44px;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="%23888"><path d="M14.707 13.293l4 4a1 1 0 0 1-1.414 1.414l-4-4A8 8 0 1 1 16 8a7.96 7.96 0 0 1-1.293 4.707zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+}
+main section#order .content .inputs input:focus{
+    background-image: none;
+
+}
+
+main section#order .content .inputs input::placeholder{
+    font-size: 13px;
+    font-weight: 400;
+    color: #676564;
+    padding-right: 20px;
+}
+main section#order .content .inputs button {
+    padding: 10px 16px;
+    background-color: #197BE5;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+    width: 131px;
+    height: 44px;
+    cursor: pointer;
+}
+
+main section#order .content h3{
+    font-size: 25px;
+    font-weight: 700;
+    color: #151211;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+main section#order .content .status ul{
+    gap: 24px;
+}
+main section#order .content .status ul li{
+    padding-bottom: 6px;
+}
+main section#order .content .status ul li:first-child{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151211;
+    border-bottom: 2px solid #151211;
+}
+main section#order .content .status ul li:not(:first-child){
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #676564;
+}
+/* start order data */
+main section#order .content .order-card {
+    border-radius: 16px;
+    border: 0.5px solid #C5C4C4;
+    background-color: #FFFFFF;
+}
+main section#order .content .order-card .order-header{
+    background-color: #F1F1F1;
+    padding: 8px 16px;
+    border-radius: 16px 16px 0 0;
+
+}
+main section#order .content .order-card .order-header ul .first{
+    color: #383635;
+    font-size: 13px;
+    font-weight: 400px;
+    line-height: 19.5px;
+}
+main section#order .content .order-card .order-header ul .second{
+    color: #383635;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+main section#order .content .order-card .order-header ul .special{
+    color: #FF8C39;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+main section#order .content .order-card .order-header ul .special1{
+    color: #197BE5;
+    
+}
+main section#order .content .order-card .order-header ul .special2{
+    color: #676564;
+    
+}
+main section#order .content .order-card .order-info{
+    padding: 16px;
+    gap: 24px;
+}
+main section#order .content .order-card .order-info .right h6{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #383635;
+}
+main section#order .content .order-card .order-info .right .data{
+    gap: 24px;
+    margin-top: 30px;
+    
+}
+main section#order .content .order-card .order-info .right .data img{
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+}
+main section#order .content .order-card .order-info .right .data p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383635;
+}
+main section#order .content .order-card .order-info .left{
+    gap: 16px;
+}
+main section#order .content .order-card .order-info .left button{
+    padding: 8px 16px ; 
+    border-radius: 8px;
+    background-color: #F1F1F1;
+    font-weight: 400;
+    font-size: 13px;
+    color: #151211;
+    width: 95px;
+    height: 44px;
+}
+main section#order .content .order-card .order-info .left .one{
+    padding: 8px 16px ; 
+    border-radius: 8px;
+    background-color: #197BE5;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    width: 136px;
+    height: 44px;
+}
+main section#order .content .order-card .order-info .left .second{
+    background-color: #F1F1F1;
+    color: #151211;
+}
+
+@media(max-width:580px){
+    main section#order .content .top-header {
+        flex-direction: column !important;
+    }
+    main section#order .order-card .order-info{
+        flex-direction: column;
+    }
+    main section#order .order-card .order-info .left{
+        align-items: flex-start !important;
+    }
+}
+
+
+/* aside media */
+@media(max-width:767px){
+    aside#cartsData .other-product .products .productItem{
+      justify-content: flex-start !important;
+      gap: 8px;
+    }
+  }

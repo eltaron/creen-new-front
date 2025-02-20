@@ -1,0 +1,233 @@
+/* Start Categories Section */
+main section#categories {
+  height: 112px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+section#categories .category span,
+.category svg {
+  cursor: pointer;
+}
+section#categories .category .img-svg {
+  background-color: var(--second-color);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#categories .category span {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+/* End Categories Section */
+
+/* Start ADs Section */
+main section#AdsShop .swiper-wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+  height: 219px;
+}
+section#AdsShop .swiper-slide.right{
+  border-radius: 16px 0 0 16px;
+}
+section#AdsShop .swiper-slide.center{
+  border-radius: 16px;
+}
+section#AdsShop .swiper-slide.left{
+  border-radius:  0 16px 16px 0 ;
+}
+section#AdsShop .swiper-slide .image-ads .ads-offer {
+  top: 139px;
+  left: 24px;
+}
+section#AdsShop .swiper-slide.center .content {
+  background-color: #0057b5;
+  width: 60% !important;
+  position: relative;
+
+}
+section#AdsShop .swiper-slide.center .image-ads{
+  width: 40%;
+}
+section#AdsShop .swiper-slide.center .content::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-width: 219px 50px;
+  border-style: solid;
+  border-color: #0057b5 #0057b5 transparent transparent;
+  z-index: 1;
+}
+section#AdsShop .swiper-slide.center .content h1,
+section#AdsShop .swiper-slide.left .content h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+section#AdsShop .swiper-slide.center .content p,
+section#AdsShop .swiper-slide.left .content p {
+  font-size: 25px;
+  font-weight: 700;
+}
+section#AdsShop .swiper-slide.center .content button,
+section#AdsShop .swiper-slide.left .content button {
+  padding: 8px 16px;
+  width: 87px;
+  border-radius: 8px;
+  gap: 16px;
+  box-shadow: #1018280d 1px 1px 2px 0px, inset #1018280d 0px 2px 0px 0px;
+  background-color: white;
+  color: var(--dark-color);
+  font-size: 13px;
+  font-weight: 400;
+}
+section#AdsShop .swiper-slide.left {
+  background-color: #ff8c39;
+}
+/* End ADs Section */
+
+
+
+
+
+/* Start Supplement-Offers Section*/
+main section#Supplement-Offers{
+  padding: 16px;
+  border-radius: 16px;
+}
+section#Supplement-Offers .top-head p,section#Supplement-Offers .top-head h6{
+  font-size: 16px;
+  font-weight: 700;
+}
+section#Supplement-Offers .top-head p{
+  color: var(--first-color);
+  cursor: pointer;
+}
+section#Supplement-Offers .top-head h6{
+  color: var(--dark-color);
+}
+section#Supplement-Offers .main-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+section#Supplement-Offers .main-container .box{
+  margin-bottom: 4px;
+
+}
+section#Supplement-Offers .main-container .box .top{
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+section#Supplement-Offers .main-container .box .offer{
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  background-color: #F54747;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+section#Supplement-Offers .main-container .box .heart{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+section#Supplement-Offers .main-container .box .share{
+  position: absolute;
+  top: 160px;
+  left: 2px;
+}
+section#Supplement-Offers .main-container .box .card-data p,section#Supplement-Offers .main-container .box .card-data span{
+  font-size: 13px;
+  font-weight: 400;
+  color: #383635;
+  padding: 0;
+  margin: 3px 0;
+  cursor: pointer;
+}
+/* End Supplement-Offers Section*/
+
+/* Start Clothing-Categories Section*/
+main section#Clothing-Categories{
+  padding: 16px;
+  border-radius: 16px;
+}
+section#Clothing-Categories .top-head h6{
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: 700;
+}
+section#Clothing-Categories .main-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+section#Clothing-Categories .main-container .box{
+  background-color: var(--second-color);
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+section#Clothing-Categories .main-container .box h3{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 0;
+  color: var(--dark-color);
+}
+
+/* End Clothing-Categories Section*/
+
+
+
+@media(max-width:1200px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media(max-width:992px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media(max-width:800px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section#Clothing-Categories .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width:767px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  section#Clothing-Categories .main-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media(max-width:520px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section#Clothing-Categories .main-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width:420px){
+  section#Supplement-Offers .main-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section#Clothing-Categories .main-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

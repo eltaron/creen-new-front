@@ -2,6 +2,7 @@
   --first-color: #197be5;
   --second-color: #f6f6f5;
   --third-color: #ffffff;
+  --dark-color:#151211;
 }
 body,
 * {
@@ -12,6 +13,9 @@ body,
 body {
   overflow-x: hidden;
   background-color: var(--second-color);
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
 }
 .row {
   margin: 0;
@@ -38,4 +42,9 @@ button {
   background: none;
   border: none;
   outline: none;
+}
+.line{
+  width: 100%;
+  height: 2px;
+  background-color: var(--second-color);
 }
